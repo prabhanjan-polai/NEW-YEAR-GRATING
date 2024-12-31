@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉NewYearGreet🎉</title>
+    
+    
+  </head>
+  
+<body>
+
+
+
+
+
+
+    <main>
+
+
+
+
+        <div id="BODY"   >
+
+
+            <div id="contener">
+         
+             <h1 >happy new year buddy </h1>
+             <h2 text-aling: center; >🎉卄ᥲρρ*y new*✨ year🎉</h2>
+            
+             <h1 id="greeting"></h1>
+             <input type="text" id="nameInput" placeholder="Enter your name buddy😜"><br>
+             <button onclick="displayGreeting()+displayGreetingpara()+diwali()"  id="greetbutton">🎉greet🎉</button>
+            <button onclick="diwali()+displayGreeting() "  id="diwali">🎉NewYearGreet🎉</button>--> 
+         
+         
+         
+             <div id="inputcontener">
+             <input type="text" id="inputBox" placeholder="your name😜">
+             <input type="text" id="inputBoxtwo" placeholder=" Another Enter text here">
+
+             </div>
+
+             <div id="BUTTONCONTENER"></div>
+             <button onclick="speakInput()" id="speak1"  class="button">Speak 1</button>
+
+
+             <!--<h1 id="para"></h1>
+             <input type="text" id="inpara" placeholder="Enter your name">
+             <button onclick="displayGreetingpara()">Greet Me</button>
+            -->
+             
+                 
+
+
+              <p>
+                <pre><h4 id="greetingpara"></h4>
+                As the year comes to a close, I can’t help but feel incredibly thankful for you and the bond we share.
+                Through all the highs and lows, your friendship has been a constant source of comfort, joy, and strength. 
+                
+                
+               You’ve made this past year brighter just by being in it, and I can’t wait to see what the future holds for us.
+                
+        -----> In this new year, I wish for you all the happiness you deserve—may you find peace in the quiet moments, 
+               courage in the challenges, and love in everything you do. Remember, no matter where life takes us, 
+               I’m here for you—cheering you on, lifting you up, and celebrating every step of your journey.
+
+                Let’s make this year even more beautiful than the last, with laughter, growth,
+                 and all the unforgettable memories we’ll create together.
+
+
+                
+                Thank you for being not just a friend, but a light in my life. Here’s to new beginnings, fresh hopes,
+                 and a year filled with everything that makes your heart smile.
+
+
+                
+                With all my love and warmest wishes,   [Prabhanjan]
+         </pre>
+
+              </p>
+    </main>
+   /////////////////////////////////////////////////////////////////
+   ///////////////////////////////////////////////////////////////////////////
+   /////////////////////////////////////////////////////////////////////////
+   <div id="BODY"   >
+
+
+   <div id="contener">
+
+    <h1 >🪔happy diwali buddy🪔 </h1>
+    <h2 text-aling: center;>卄ᥲρρ*y ᗪɪωᥲℓɪ*✨</h2>
+    <h1 id="greeting"></h1>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <button onclick="displayGreeting()"   >🪔greer🪔</button>
+    
+
+
+
+    <div id="inputcontener">
+    <input type="text" id="inputBox" placeholder="Enter text here">
+    <input type="text" id="inputBoxtwo" placeholder=" Another Enter text here">
+    </div>
+
+   <div id="BUTTONCONTENER"></div>
+    <button onclick="speakInput()" id="speak1"  class="button">Speak 1</button>
+
+    <!--<button onclick="speakInput2()">Speak 2</button>
+       -->
+
+    <button onclick="speakInput()+speakInput2()" id="speak2" class="button">Speak (1+2)</button>
+
+    <button onclick="fuck()"  id="fuck">F**K</button>
+     <button onclick="diwali()+displayGreeting() "  id="diwali">🎉NewYearGreet🎉</button>
+     
+   </div>
+</div>
+
+</div>
+<footer>
+    <P id="dis"> disclamer:  don't mind //it's only for FUN </P>
+    <button onclick="displayGreetingpara">wish</button>
+
+</footer>
+</div>-->
+
+</body>
+      
+
+
+
+<script>
+    alert('PRABHANJAN says thans for comming my site,or clicking the status link')
+    function speakInput() {
+        var input = document.getElementById("inputBox").value;
+        var utterance = new SpeechSynthesisUtterance(input);
+        window.speechSynthesis.speak(utterance);
+    }
+    function speakInput2() {
+        var input2 = document.getElementById("inputBoxtwo").value;
+        var utterance2 = new SpeechSynthesisUtterance(input2);
+        window.speechSynthesis.speak(utterance2);
+    }
+    function fuck(){
+        var input= document.getElementById("inputBox").value;
+        var utterance = new SpeechSynthesisUtterance(input+`fuck you`);
+        window.speechSynthesis.speak(utterance);
+    }
+     function diwali(){var input= document.getElementById("nameInput").value;
+        var utterance = new SpeechSynthesisUtterance(input+`happy new year buddy`);
+        window.speechSynthesis.speak(utterance);
+          
+     }
+     function greet(){var input= document.getElementById("inputBox").value;
+                      console.log(varinput);
+                      heading= document.querySelector('#greet');
+                      heading.innertext= input +'happy dibaly';
+           
+     }
+    
+     function displayGreeting() {
+            var name = document.getElementById('nameInput').value;
+            document.getElementById('greeting').innerText = 'HAPPY NEW YEAR ' +`🎉` + name + '🎉';
+        }
+      //  function displayGreetingparagraph() {
+        //    var name = document.getElementById('nameInput').value;
+        //    document.getElementById('greetingparagraph').innerText = 'Happy New Year, my dear friend! ' +`🎉` + name + '🎉';
+        // }
+
+
+        
+                 function displayGreetingpara() {
+                     var paraname = document.getElementById('nameInput').value;
+                     console.log(paraname)
+                     document.getElementById('greetingpara').innerText = 'Happy New Year my dear friend! ' +paraname ;
+
+                 }
+            
+
+</script>
+
+
+///////////////////////////////////////////////////////////
+
+<style>
+    
+
+    *{ margin: 5px;
+        background-color:  #abfbfb;
+    }
+
+        
+    }
+      .button{
+                  height: 4%;
+               background-color: blue;
+               border-radius: 5px;
+      }
+     
+     #contener{
+                height:90%;
+                width: 70%;
+            
+     }
+
+
+       #speak1{
+             background-color: blue;
+             border-radius: 8px;
+       }
+       #speak2{
+             background-color: blue;
+             border-radius: 8px;
+       }
+  
+         
+     #dis{    color: red;
+            
+         }  
+
+    #fuck{
+            background-color: red;
+            border-radius: 8px;
+            
+    }
+    #greetbutton{background-color: rgb(169, 243, 126);
+        border-radius: 8px;
+    
+    }
+    #diwali{background-color: rgb(169, 243, 126);
+        border-radius: 8px;
+    
+
+    }
+</style>
+//////////////////////////////////////////////////////////
+
+
+
+
+
+
+</html>
